@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Stream & Chill</title>
+        <link rel="stylesheet" href="/proxyNetflix/css/style.css">
+    </head>
+
+    <body>
+        <!-- Fallback Static Background -->
+        <div id="background"></div>
+
+        <!-- Login Content -->
+        <div class="content-wrapper">
+            <div class="login-container">
+                <h1>Stream & Chill</h1>
+                <p>Sign in to continue enjoying your favorite movies and shows</p>
+                <input type="text" id="username" placeholder="Username" />
+                <input type="password" id="password" placeholder="Password" />
+                <button onclick="login()">Sign In</button>
+                <p id="error-message" class="error-message">Invalid username or password.</p>
+                <div class="footer">
+                    <p>Need help? <a href="#">Contact Swaraj</a></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="/proxyNetflix/server/app.js"></script>
+    </body>
+
+</html>

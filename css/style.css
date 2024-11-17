@@ -1,0 +1,106 @@
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Fallback Background */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/proxyNetflix/images/cinema5.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 40px 30px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Login Box Placement */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+/* Title and Text */
+.login-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.login-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Input Fields */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #000;
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #e50914;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+    background: #b20710;
+}
+
+/* Error Message */
+.error-message {
+    color: #e50914;
+    display: none;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}

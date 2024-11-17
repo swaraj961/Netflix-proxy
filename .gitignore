@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables file
+.env
+
+# Build output
+/dist
+/build
+
+# OS-specific files
+.DS_Store        # macOS
+Thumbs.db        # Windows
+
+# IDE configuration files
+.vscode/
+.idea/
+
+
+# NPM package lock file (optional)
+package-lock.json
+
+# Local configuration files
+*.local
+
+# Any other files or directories you don't want to track
