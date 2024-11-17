@@ -13,9 +13,13 @@ const dbName = process.env.DB_NAME;
 
 app.use(bodyParser.json());
 
-// const cors = require('cors');
-// app.use(cors());  // This enables CORS for all routes
+// Serve static files from the 'public' directory (where index.html is located)
+app.use(express.static(path.join(__dirname, 'public')));
 
+// Route for the homepage (index.html)
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 const users = [
   {
