@@ -2,7 +2,7 @@ function login() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  fetch("http://localhost:3000/login", {
+  fetch("/login", {
     // Use the full URL for the server
     method: "POST",
     headers: {
@@ -19,7 +19,7 @@ function login() {
     .then((data) => {
       if (data.success) {
         // Securely redirect to the secured route
-        window.location.href = `http://localhost:3000/redirect/${data.redirectToken}`;
+        window.location.href = `/redirect/${data.redirectToken}`;
       }
     })
     .catch((error) => {
