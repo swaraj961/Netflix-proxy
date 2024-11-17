@@ -13,6 +13,10 @@ const dbName = process.env.DB_NAME;
 
 app.use(bodyParser.json());
 
+// const cors = require('cors');
+// app.use(cors());  // This enables CORS for all routes
+
+
 const users = [
   {
     username: "admin",
