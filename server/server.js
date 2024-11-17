@@ -1,7 +1,15 @@
 const express = require("express");
+require("dotenv").config();
+
 const bodyParser = require("body-parser");
 const crypto = require("crypto");
 const app = express();
+
+const port = process.env.PORT || 3000;
+const dbHost = process.env.DB_HOST;
+const dbUser = process.env.DB_USER;
+const dbPass = process.env.DB_PASS;
+const dbName = process.env.DB_NAME;
 
 app.use(bodyParser.json());
 
@@ -76,6 +84,6 @@ app.get("/secured", (req, res) => {
   );
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on http://localhost:3000");
+app.listen(port, () => {
+  console.log("Server is running on ${port}");
 });
