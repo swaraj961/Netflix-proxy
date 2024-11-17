@@ -4,6 +4,7 @@ require("dotenv").config();
 const bodyParser = require("body-parser");
 const crypto = require("crypto");
 const app = express();
+const path = require("path");
 
 const port = process.env.PORT || 3000;
 const dbHost = process.env.DB_HOST;
